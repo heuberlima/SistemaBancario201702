@@ -16,6 +16,7 @@ public class EContaCorrente {
         return saldo;
     }
 
+    //Atende o requisito de não permitir o saldo nulo.
     public void setSaldo(Double saldo) {
         if(saldo == null) {
             throw new IllegalArgumentException("não é permitido saldo nulo");
